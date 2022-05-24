@@ -1,0 +1,392 @@
+body {
+    font-family: 'over pass','Noto Sans JP';
+}
+img {
+    width: 100%;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid ;
+    display: inline-block;
+    margin: auto;
+    padding-bottom: 5px;
+}
+.header {
+    position: relative;
+    background-color: #f29fa5;
+}
+.logo {
+    position: absolute;
+    left: 7%;
+    top: 3%; 
+    width: 8%;
+}
+.logo img {
+    object-fit: cover;
+}
+
+.experience-button {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    width: 23%;
+}
+.experience-button button {
+    object-fit: cover;
+}
+.campaign {
+    position: relative;
+    top: 20px;
+}
+.beforeafter {
+    text-align: center;
+    background-color: #f29fa5;
+    color: white;
+    padding: 80px 0;
+}
+.beforeafter-img {
+    width: 70%;
+    margin: auto;
+}
+.beforeafter-img img {
+    margin-top: 50px;
+    
+}
+.feature {
+    text-align: center;
+    margin: 80px 0;
+}
+.feature-contents {
+    width: 70%;
+    margin:auto;
+}
+.feature-icon {
+    width: 65%;
+    margin: 48px auto;
+}
+.staff {
+    text-align: center;
+    margin: 80px 0;
+}
+.staff-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    margin: 40px auto 0;
+    gap: 40px 10%;
+}
+.staff-item {
+    width: 45%;
+}
+.price {
+    text-align: center;
+}
+.price-img {
+    background-color: #f8cfd2;
+    margin: 32px auto 0;
+    padding: 64px 0;
+}
+.price-img img {
+    width: 65%;
+}
+.campaign {
+    text-align: center;
+    margin: 48px 0 64px;
+}
+.campaign-content {
+    width: 50%;
+    margin: 0 auto;
+}
+.campaign-content button {
+    margin: 40px 0;
+}
+.user {
+    text-align: center;
+    margin-bottom: 64px;
+}
+.user-comment {
+    background-color: #c7e6a7;
+    margin: 24px auto 0;
+    padding: 64px 0;
+}
+.user-comment img {
+    width: 60%;
+    margin-bottom: 24px;
+}
+.faq {
+    margin-bottom: 40px;
+}
+.faq-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.card {
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px dashed gray !important;
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: none;
+}
+.card-header h4 {
+    position: relative;
+    padding: 0 0 0 30px;
+    flex-basis: 80%;
+}
+.card-header h4:before {
+    content: "";
+    display: inline-block;
+    background-image: url("../assets/pc-q-icon.png");
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -8px;
+    left: -10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.card-body {
+    position: relative;
+    padding: 0 0 10px 52px;
+    font-size: 14px;
+    
+}
+.card-body::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../assets/pc-a-icon.png");
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0px;
+    left: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.studios {
+    text-align: center;
+}
+.studio th {
+    padding-right: 10px;
+    font-weight: normal;
+}
+.studio-contents {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 60%;
+    margin: 48px auto;
+    gap: 0 5%;
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 850px) {
+
+}
+.studio {
+    /* text-align: center; */
+    box-shadow: 6px 6px 0px 0 rgba(77,76,76,.3)
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.studio table {
+    text-align: left;
+    display: inline-block;
+    /* font-size: 14px; */
+    white-space: nowrap;
+    font-size: clamp(12px, 1vw, 14px);
+    font-weight: normal;
+    line-height: 2;
+    margin: 0 10px 10px;
+}
+footer {
+    color: white;
+    background-color: #ff7d85;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 540px) {
+    .header, .beforeafter, .feature, .staff, .price, .campaign, .user {
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 541px) {
+    .sp-header, .sp-trouble, .sp-beforeafter, .sp-feature, .sp-staff, .sp-price, .sp-campaign, .sp-user {
+        display: none;
+    }
+}
+@media screen and (max-width: 760px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .studio-contents {
+        display: block;
+        width: 80%;
+    }
+    .studio {
+        display: flex;
+        margin: 30px 0;
+    }
+    .studio img {
+        width:auto;
+        height: 100%;
+    }
+    .studio > div {
+        width: 50%;
+        overflow:hidden
+    }
+    h3 {
+        font-size: 16px !important;
+        margin: 10px 0 !important;
+    }
+    td, th {
+        font-size: 8px;
+    }
+}
+.sp-header {
+    position: relative;
+    background-color: #f29fa5;
+}
+.sp-logo {
+    position: absolute;
+    left: 5%;
+    top: 3%; 
+    width: 14%;
+}
+.sp-logo img {
+    object-fit: cover;
+}
+.sp-campaign-button {
+    position: absolute;
+    right: 5%;
+    top: 92%;
+    width: 90%;
+}
+.sp-campaign-button button {
+    object-fit: cover;
+}
+.sp-trouble {
+    background-color: #f29fa5;
+}
+.sp-beforeafter {
+    text-align: center;
+    background-color: #f29fa5;
+    color: white;
+    padding: 40px 0;
+}
+.sp-beforeafter-img {
+    width: 85%;
+    margin: auto;
+}
+.sp-beforeafter-img img {
+    margin-top: 32px;
+}
+.sp-feature {
+    text-align: center;
+    margin: 40px 0;
+}
+.sp-feature-contents {
+    width: 90%;
+    margin: auto;
+}
+.sp-feature-icon {
+    width: 90%;
+    margin: 40px auto;
+}
+.sp-staff {
+    text-align: center;
+    margin: 40px 0;
+}
+.sp-staff-list {
+    width: 90%;
+    margin: 40px auto 0;
+}
+.sp-staff-item {
+    margin-top: 10px;
+}
+.sp-price {
+    text-align: center;
+}
+.sp-price-img {
+    background-color: #f8cfd2;
+    margin: 32px auto 0;
+    padding: 64px 0;
+}
+.sp-price-img img {
+    width: 90%;
+}
+.sp-campaign {
+    text-align: center;
+    margin: 32px 0 24px;
+}
+.sp-campaign-content {
+    width: 90%;
+    margin: 0 auto;
+}
+.sp-campaign-content button {
+    margin: 40px 0;
+}
+.sp-user {
+    text-align: center;
+    margin-bottom: 64px;
+}
+.sp-user-comment {
+    background-color: #c7e6a7;
+    margin: 24px auto 0;
+    padding: 40px 0;
+}
+.sp-user-comment img {
+    width: 90%;
+    margin-bottom: 16px;
+}
+.sp-studios {
+    text-align: center;
+}
+ th {
+     padding-right: 10px;
+     font-weight: normal;
+ }
+
+.sp-studio-contents {
+    /* display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; */
+    width: 70%;
+    margin: 48px auto;
+    /* gap: 0 5%; */
+}
+.sp-studio {
+    /* text-align: center; */
+    display: flexbox;
+    /* box-shadow: 6px 6px 0px 0 rgba(77,76,76,.3) */
+}
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.sp-studio table {
+    text-align: left;
+    display: inline-block;
+    /* font-size: 14px; */
+    white-space: nowrap;
+    font-size: clamp(12px, 1vw, 14px);
+    font-weight: normal;
+    line-height: 2;
+    margin: 0 10px 10px;
+}
