@@ -1,5 +1,5 @@
 body {
-    font-family: 'over pass', 'Noto Sans JP';
+    font-family: 'over pass', 'Noto Sans JP'、'ヒラギノ角ゴシック ProN';
 }
 
 img {
@@ -398,7 +398,7 @@ th {
     font-size: clamp(12px, 1vw, 14px);
     font-weight: normal;
     line-height: 2;
-    margin: 0 10px 10px;
+    margin: 0 10px 10px
 }
 
 @media screen and (max-width: 540px) {
